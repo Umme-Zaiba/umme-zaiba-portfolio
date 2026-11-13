@@ -80,3 +80,9 @@ function loop(now){requestAnimationFrame(loop);lenis&&lenis.raf(now);const y=scr
   const fr=foot.getBoundingClientRect();foot.style.setProperty('--fy',`${clamp((fr.top-innerHeight*.55)/innerHeight*60,0,30)}%`);
 }
 requestAnimationFrame(loop);
+
+/* ===== latest notes on the homepage (from posts/posts.json; drafts only with ?drafts) ===== */
+(async()=>{const box=$('#homeNotes');if(!box)return;const D=location.search.includes('drafts');
+  try{const all=await (await fetch('posts/posts.json',{cache:'no-cache'})).json();const ps=all.filter(p=>D||!p.draft).sort((a,b)=>b.date.localeCompare(a.date)).slice(0,3);
+    box.innerHTML=ps.length?ps.map(p=>`<a class="nrow in" href="post.html?p=${p.slug}${D?'&drafts':''}"><span class="mono">${p.date.slice(0,4)}</span><span class="nt">${p.title}</span><span class="arrow">→</span></a>`).join(''):
+      `<div class="soon"><p class="hand-note">First notes are on their way ✍️</p><p>I'm writing about workflows, access automation and building with AI. <a href="blog.html">Peek at the notes page →</a></p></div>`}catch(e){box.innerHTML=''}})();

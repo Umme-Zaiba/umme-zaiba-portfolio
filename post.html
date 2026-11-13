@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Note — Umme Zaiba</title>
+<meta name="description" content="Umme Zaiba — software engineer who turns complex systems into calm, fast products.">
+<meta name="theme-color" content="#f6f1e8"><meta name="color-scheme" content="only light"><meta name="darkreader-lock">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..600,100&family=Manrope:wght@400;500;600&family=Caveat:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="sub">
+<div class="cursor" id="cursor"><span>read</span></div>
+<header class="nav solid" id="nav">
+  <a href="index.html" class="logo" aria-label="Umme Zaiba — home"><b>uz</b><span>umme zaiba</span></a>
+  <nav class="links" id="links"><a href="index.html#work">work</a><a href="index.html#about">about</a><a href="blog.html" class="on">notes</a></nav>
+  <a href="index.html#contact" class="btn small">Get in touch</a>
+  <button class="burger" id="burger" aria-label="Open menu"><i></i><i></i></button>
+</header>
+<div class="readbar" id="readbar"></div>
+<main class="postwrap">
+  <a href="blog.html" class="back mono">← all notes</a>
+  <header class="phead"><p class="mono meta" id="meta"></p><h1 class="ptitle" id="ptitle">Loading…</h1><p class="psum" id="psum"></p></header>
+  <div class="pgrid"><aside class="toc" id="toc"></aside><article class="prose" id="prose"></article></div>
+  <nav class="pnav" id="pnav"></nav>
+</main>
+<footer class="foot"><div class="frow"><span class="mono">© <span id="yr"></span> Umme Zaiba</span><nav><a href="index.html">Home</a><a href="blog.html">All notes</a><a href="index.html#contact">Contact</a></nav><a href="#" class="mono totop" onclick="scrollTo({top:0,behavior:'smooth'});return false">back to top ↑</a></div></footer>
+<script src="https://cdn.jsdelivr.net/npm/marked@12.0.2/marked.min.js"></script>
+<script src="blog.js"></script>
+</body></html>
