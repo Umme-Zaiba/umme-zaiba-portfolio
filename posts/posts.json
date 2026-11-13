@@ -1,0 +1,5 @@
+[
+  {"slug":"shipping-a-case-management-platform","title":"What I learned shipping a case-management platform","date":"2026-11-10","tags":["engineering","product"],"summary":"Configurable workflows, onboarding that doesn't scare people, and why 'make it generic' is both the best and worst advice.","draft":true},
+  {"slug":"approvals-that-provision-themselves","title":"Approvals that provision themselves","date":"2026-10-28","tags":["automation","cloud","security"],"summary":"Turning a ticket-and-wait access process into a one-click approval that grants access, logs it, and takes it away again.","draft":true},
+  {"slug":"ai-suggestions-people-keep","title":"Building AI suggestions people actually keep","date":"2026-09-15","tags":["ai","ux","engineering"],"summary":"Inline AI completions live or die on latency and restraint. Notes from putting streaming suggestions into a real product.","draft":true}
+]
