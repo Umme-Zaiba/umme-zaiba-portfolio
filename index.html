@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Umme Zaiba — Software Engineer</title>
+<meta name="description" content="Umme Zaiba — software engineer who turns complex systems into calm, fast products.">
+<meta name="theme-color" content="#f6f1e8"><meta name="color-scheme" content="only light"><meta name="darkreader-lock">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght,SOFT@9..144,300..600,100&family=Manrope:wght@400;500;600&family=Caveat:wght@500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="cursor" id="cursor"><span>drag</span></div>
+
+<header class="nav" id="nav">
+  <a href="#top" class="logo" aria-label="Umme Zaiba — home"><b>uz</b><span>umme zaiba</span></a>
+  <nav class="links" id="links"><a href="#work" data-i="1">work</a><a href="#how" data-i="2">process</a><a href="#about" data-i="3">about</a><a href="#notes" data-i="4">notes</a></nav>
+  <a href="#contact" class="btn small mag">Get in touch</a>
+  <button class="burger" id="burger" aria-label="Open menu"><i></i><i></i></button>
+</header>
+
+<main id="top">
+<section class="hero dots">
+  <div class="hero-l">
+    <p class="kicker mono reveal"><i class="live"></i>Software engineer · open to new projects</p>
+    <h1 class="split">I turn <span class="mark">complex systems</span> into products that feel <em>effortless</em>.</h1>
+    <p class="lede reveal">Hi, I'm Umme Zaiba. I build full-stack products end to end — data models, APIs and interfaces — and I'm happiest in the messy middle, where ambiguity becomes a clear plan.</p>
+    <div class="cta reveal"><a href="#work" class="btn mag">See my work <span>→</span></a><a href="#contact" class="btn ghost mag">Say hello</a>
+      <span class="hand" aria-hidden="true">it's quick, promise!<svg viewBox="0 0 120 60"><path d="M110 8C80 4 50 14 30 34S12 52 8 54M8 54l2-14M8 54l13-4"/></svg></span></div>
+  </div>
+  <div class="hero-r" id="board" aria-label="Sticky notes you can drag">
+    <div class="note n1" style="--x:4%;--y:6%;--r:-6deg"><i class="tape"></i>Frontend that feels fast</div>
+    <div class="note n2" style="--x:52%;--y:0%;--r:5deg"><i class="tape"></i>APIs people enjoy</div>
+    <div class="note n3" style="--x:10%;--y:46%;--r:4deg"><i class="tape"></i>Workflows &amp; automation</div>
+    <div class="note n4" style="--x:56%;--y:44%;--r:-5deg"><i class="tape"></i>Shipping with AI ✦</div>
+    <div class="nowcard" style="--x:22%;--y:78%"><span class="mono">now.md</span><p><i class="live"></i>Building a case-management platform for enterprise teams</p></div>
+  </div>
+</section>
+
+<section class="polaroids" aria-label="Snapshots">
+  <div class="row" id="rowA"></div>
+</section>
+
+<section id="work" class="hscroll">
+  <div class="pin">
+    <div class="hs-head"><p class="mono label">01 — Selected work</p><h2 class="h2 split">Things I've <span class="mark">built</span></h2><p class="mono hint">scroll →</p></div>
+    <div class="track" id="track"></div>
+  </div>
+</section>
+
+<section id="how" class="how">
+  <p class="mono label">02 — How I work</p>
+  <h2 class="h2 split">A calm process for messy problems</h2>
+  <ol class="steps">
+    <li class="reveal"><span class="num">01</span><div><h3>Understand</h3><p>Talk to the people, read the data, map the edge cases before writing a line.</p></div></li>
+    <li class="reveal"><span class="num">02</span><div><h3>Shape</h3><p>Turn ambiguity into a clear plan — data model, API contract, the smallest useful slice.</p></div></li>
+    <li class="reveal"><span class="num">03</span><div><h3>Build</h3><p>Small, reviewed increments behind flags. Tests where they matter, docs where they help.</p></div></li>
+    <li class="reveal"><span class="num">04</span><div><h3>Measure</h3><p>Ship, watch the numbers, learn, and make it better. Done means a number moved.</p></div></li>
+  </ol>
+</section>
+
+<section id="about" class="about">
+  <div class="about-l">
+    <p class="mono label">03 — About</p>
+    <h2 class="h2 split">Engineer by trade, <span class="mark">curious</span> by default.</h2>
+    <p class="reveal">Replace this with a short, human intro: what you love building, the kind of teams you thrive in, and what you're learning right now. Keep it warm and specific.</p>
+    <ul class="facts reveal"><li><b>0+</b><span>years building</span></li><li><b>0+</b><span>products shipped</span></li><li><b>∞</b><span>cups of chai</span></li></ul>
+  </div>
+  <div class="about-r">
+    <div class="tile t-a reveal"><h4>Stack</h4><p>TypeScript · React · Node · Java · Spring · Postgres · Azure · Docker</p></div>
+    <div class="tile t-b reveal"><h4>Lately</h4><p>LLM features in production, workflow engines, and WebGL for fun.</p></div>
+    <div class="tile t-c reveal"><h4>Off-screen</h4><p>Long walks, good sunsets, and a notebook full of half-ideas.</p></div>
+  </div>
+</section>
+
+<section id="notes" class="notes">
+  <p class="mono label">04 — Notes</p>
+  <h2 class="h2 split">Things I've written</h2>
+  <a class="nrow reveal" href="#"><span class="mono">2026</span><span class="nt">Designing APIs that frontends actually enjoy</span><span class="arrow">→</span></a>
+  <a class="nrow reveal" href="#"><span class="mono">2026</span><span class="nt">What I learned shipping a case-management platform</span><span class="arrow">→</span></a>
+  <a class="nrow reveal" href="#"><span class="mono">2025</span><span class="nt">Practical notes on building with LLMs in production</span><span class="arrow">→</span></a>
+</section>
+
+<section id="contact" class="contact">
+  <a href="#" class="badge" id="mail" aria-label="Copy email">
+    <svg viewBox="0 0 200 200" class="ring"><defs><path id="circ" d="M100 100m-76 0a76 76 0 1 1 152 0a76 76 0 1 1-152 0"/></defs><text><textPath href="#circ">available for work • let's talk • available for work • let's talk • </textPath></text></svg>
+    <span class="core">↗</span>
+  </a>
+  <p class="mono label center">05 — Contact</p>
+  <h2 class="giant split">Let's build something good.</h2>
+  <p class="center reveal"><a href="#" class="maillink" id="mail2">hello@example.com</a></p>
+</section>
+</main>
+
+<footer class="foot">
+  <div class="bigname" aria-hidden="true">umme zaiba</div>
+  <div class="frow"><span class="mono">© <span id="yr"></span> — made with care</span><nav><a href="#" class="mag">LinkedIn</a><a href="#" class="mag">GitHub</a><a href="#" class="mag">Résumé</a></nav><a href="#top" class="mono totop">back to top ↑</a></div>
+</footer>
+<div class="toast" id="toast">Email copied ✓</div>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="main.js"></script>
+</body></html>
